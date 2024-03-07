@@ -1,0 +1,129 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/toDoListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/toDoListView"
+        android:background="@android:color/darker_gray"
+        android:padding="8dp"
+        android:text="@string/to_do_list_title"
+        android:textColor="#455A64"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="48dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/taskEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/enter_task_hint"
+        android:minHeight="48dp"
+        tools:ignore="MissingConstraints,TextContrastCheck,TextFields"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <Button
+        android:id="@+id/addTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskEditText"
+        android:text="@string/add_task"
+        tools:ignore="DuplicateClickableBoundsCheck,MissingConstraints"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+    <ListView
+        android:id="@+id/toDoListView"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@id/addTaskButton"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/scheduleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addScheduleButton"
+        android:background="@android:color/darker_gray"
+        android:padding="8dp"
+        android:text="@string/schedule_title"
+        android:textColor="#455A64"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="423dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/scheduleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toDoListTitle"
+        android:hint="@string/enter_schedule_hint"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="Autofill,MissingConstraints,TextFields"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="471dp" />
+
+    <Button
+        android:id="@+id/addScheduleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scheduleEditText"
+        android:text="@string/add_schedule"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="536dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/reminderEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scheduleTitle"
+        android:hint="@string/enter_reminder_hint"
+        android:minHeight="48dp"
+        tools:ignore="Autofill,MissingConstraints,TextFields"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <Button
+        android:id="@+id/addReminderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reminderEditText"
+        android:text="@string/add_reminder"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="360dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/remindersTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addReminderButton"
+        android:background="@android:color/darker_gray"
+        android:padding="8dp"
+        android:text="@string/reminders_title"
+        android:textColor="#455A64"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="229dp"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Other UI components -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
